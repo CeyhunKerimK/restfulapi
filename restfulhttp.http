@@ -1,0 +1,42 @@
+@BASE_URL = http://localhost:3000/api
+
+###
+
+GET {{BASE_URL}}
+
+###
+
+GET  {{BASE_URL}}/users/521
+
+
+###
+
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+          "name":"ceyhunkerim",
+          "userName":"keyc676146",
+          "password":"dipper469",
+          "email":"kilicceyhun131@gmail.com"
+}
+
+
+###
+
+POST {{BASE_URL}}/users/521
+Content-Type: application/json
+
+{
+          "name":"ceyhun",
+          "age":21
+}
+
+###
+
+PATCH  {{BASE_URL}}/users/521
+Content-Type: application/json
+{
+          "name":"ceyhun",
+          "age":22
+}
